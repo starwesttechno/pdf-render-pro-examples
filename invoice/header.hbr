@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 20px;
+        }
+        .company-logo img {
+            max-height: 60px;
+        }
+        .invoice-title {
+            text-align: right;
+        }
+        .invoice-title h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .invoice-meta {
+            margin-top: 10px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="company-logo">
+            <img src="{{company.logoUrl}}" alt="{{company.name}} Logo">
+            <div style="margin-top: 5px; font-weight: bold; color: #34495e;">{{company.name}}</div>
+        </div>
+        <div class="invoice-title">
+            <h1>Invoice</h1>
+            <div class="invoice-meta">
+                <div>Invoice #: <strong>{{invoice.number}}</strong></div>
+                <div>Date: {{invoice.date}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

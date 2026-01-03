@@ -1,0 +1,65 @@
+{
+  "company": {
+    "name": "TechFlow Solutions",
+    "address": "123 Innovation Drive, Silicon Valley, CA 94025",
+    "email": "billing@techflow.com",
+    "phone": "+1 (555) 123-4567",
+    "website": "www.techflow.com",
+    "logoUrl": "https://via.placeholder.com/150x50?text=TechFlow"
+  },
+  "client": {
+    "name": "Global Corp Industries",
+    "address": "456 Enterprise Blvd, New York, NY 10001",
+    "contactPerson": "Jane Doe",
+    "email": "accounts@globalcorp.com"
+  },
+  "invoice": {
+    "number": "INV-2024-001",
+    "date": "2024-01-15",
+    "dueDate": "2024-02-14",
+    "currency": "USD"
+  },
+  "items": [
+    {
+      "description": "Software Development Services - Phase 1",
+      "quantity": 80,
+      "price": 150.00,
+      "tax": 0.00,
+      "total": 12000.00
+    },
+    {
+      "description": "UI/UX Design Consultation",
+      "quantity": 20,
+      "price": 125.00,
+      "tax": 0.00,
+      "total": 2500.00
+    },
+    {
+      "description": "Server Infrastructure Setup",
+      "quantity": 1,
+      "price": 500.00,
+      "tax": 50.00,
+      "total": 550.00
+    },
+    {
+      "description": "Annual Maintenance Contract",
+      "quantity": 1,
+      "price": 2000.00,
+      "tax": 200.00,
+      "total": 2200.00
+    },
+    {
+      "description": "Training Session (Group)",
+      "quantity": 2,
+      "price": 600.00,
+      "tax": 0.00,
+      "total": 1200.00
+    }
+  ],
+  "totals": {
+    "subtotal": 18200.00,
+    "taxTotal": 250.00,
+    "discount": 0.00,
+    "grandTotal": 18450.00
+  }
+}
