@@ -18,7 +18,7 @@ if (!fs.existsSync(folderPath)) {
 }
 
 // 2. Read input files
-const invoicePath = path.join(folderPath, 'invoice.hbr');
+const invoicePath = path.join(folderPath, `${folderName}.hbr`);
 const dataPath = path.join(folderPath, 'data.json');
 const headerPath = path.join(folderPath, 'header.hbr');
 const footerPath = path.join(folderPath, 'footer.hbr');
@@ -66,13 +66,14 @@ const payloadString = JSON.stringify(payload);
 
 // 4. Make API Request
 const options = {
-    hostname: 'pdfapi.starwesttechno.com',
-    path: '/pdf/render',
+    hostname: 'pdfrenderpro.p.rapidapi.com',
+    path: '/pdf',
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
         'Content-Length': Buffer.byteLength(payloadString),
-        'X-RapidAPI-Proxy-Secret': apiKey || ''
+        'X-RapidAPI-Host': 'pdfrenderpro.p.rapidapi.com',
+        'X-RapidAPI-Key': apiKey || ''
     }
 };
 
@@ -96,7 +97,7 @@ const req = https.request(options, (res) => {
 
     res.on('end', () => {
         const pdfBuffer = Buffer.concat(chunks);
-        const outputPath = path.join(folderPath, 'output.pdf');
+        const outputPath = path.join(folderPath, `${folderName}.pdf`);
         fs.writeFileSync(outputPath, pdfBuffer);
         console.log(`Success! PDF generated at: ${outputPath}`);
     });
