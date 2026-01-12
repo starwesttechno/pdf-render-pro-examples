@@ -70,28 +70,7 @@
         
         /* Totals Section */
         .totals-section {
-            width: 300px;
-            margin-left: auto;
-        }
-        .total-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            font-size: 14px;
-        }
-        .total-row.final {
-            border-top: 2px solid #34495e;
-            margin-top: 10px;
-            padding-top: 15px;
-            font-weight: bold;
-            font-size: 18px;
-            color: #2c3e50;
-        }
-        .total-label {
-            color: #7f8c8d;
-        }
-        .total-row.final .total-label {
-            color: #2c3e50;
+            margin-top: 20px;
         }
         
         .currency-symbol {
@@ -151,26 +130,28 @@
         </table>
         
         <!-- Totals -->
-        <div class="totals-section">
-            <div class="total-row">
-                <span class="total-label">Subtotal</span>
-                <span>{{invoice.currency}} {{totals.subtotal}}</span>
-            </div>
-            <div class="total-row">
-                <span class="total-label">Tax</span>
-                <span>{{invoice.currency}} {{totals.taxTotal}}</span>
-            </div>
-            {{#if totals.discount}}
-            <div class="total-row">
-                <span class="total-label">Discount</span>
-                <span>- {{invoice.currency}} {{totals.discount}}</span>
-            </div>
-            {{/if}}
-            <div class="total-row final">
-                <span class="total-label">Grand Total</span>
-                <span>{{invoice.currency}} {{totals.grandTotal}}</span>
-            </div>
-        </div>
+        <table class="totals-section" style="width: 100%; border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="width: 85%; text-align: right; padding: 5px 15px; color: #7f8c8d;">Subtotal</td>
+                    <td style="width: 15%; text-align: right; padding: 5px 15px;">{{invoice.currency}} {{totals.subtotal}}</td>
+                </tr>
+                <tr>
+                    <td style="width: 85%; text-align: right; padding: 5px 15px; color: #7f8c8d;">Tax</td>
+                    <td style="width: 15%; text-align: right; padding: 5px 15px;">{{invoice.currency}} {{totals.taxTotal}}</td>
+                </tr>
+                {{#if totals.discount}}
+                <tr>
+                    <td style="width: 85%; text-align: right; padding: 5px 15px; color: #7f8c8d;">Discount</td>
+                    <td style="width: 15%; text-align: right; padding: 5px 15px;">- {{invoice.currency}} {{totals.discount}}</td>
+                </tr>
+                {{/if}}
+                <tr>
+                    <td style="border-top: 2px solid #34495e; padding: 15px 15px 5px; text-align: right; color: #2c3e50; font-weight: bold; font-size: 18px;">Grand Total</td>
+                    <td style="border-top: 2px solid #34495e; padding: 15px 15px 5px; text-align: right; font-weight: bold; font-size: 18px; color: #2c3e50;">{{invoice.currency}} {{totals.grandTotal}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
