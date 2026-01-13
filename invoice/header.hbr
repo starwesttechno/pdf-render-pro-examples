@@ -7,6 +7,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
+            padding: 0 20px; /* Optional: match page padding if desired, or keep 0 */
+            box-sizing: border-box; 
             padding-bottom: 20px;
             border-bottom: 2px solid #eee;
             margin-bottom: 20px;
@@ -34,8 +37,11 @@
 <body>
     <div class="header-container">
         <div class="company-logo">
-            <img src="{{company.logoUrl}}" alt="{{company.name}} Logo">
-            <div style="margin-top: 5px; font-weight: bold; color: #34495e;">{{company.name}}</div>
+            <img src="{{{base64 company.logoUrl}}}" alt="{{company.name}} Logo">
+            <div style="margin-top: 5px; font-weight: bold; color: #34495e; font-size: 12px;">{{company.name}}</div>
+        </div>
+        <div style="margin-top: 10px;">
+            <img src="{{{barcode invoice.number 'Code128' 300 100 true }}}" alt="Barcode" style="max-height: 80px;" />
         </div>
         <div class="invoice-title">
             <h1>Invoice</h1>
