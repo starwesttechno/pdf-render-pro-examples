@@ -1,0 +1,49 @@
+{
+    "profile": {
+        "name": "Jane Doe",
+        "title": "Senior Software Engineer",
+        "email": "jane.doe@example.com",
+        "phone": "+1 (555) 987-6543",
+        "location": "San Francisco, CA",
+        "website": "https://janedoe.dev",
+        "summary": "Experienced software engineer with over 8 years of expertise in building scalable web applications. Passionate about clean code, performance optimization, and developer experience."
+    },
+    "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "React",
+        "Docker",
+        "AWS",
+        "GraphQL",
+        "Python"
+    ],
+    "education": [
+        {
+            "degree": "B.S. Computer Science",
+            "school": "University of Technology",
+            "year": "2015"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Lead Developer",
+            "company": "Tech Innovators Inc.",
+            "period": "2019 - Present",
+            "achievements": [
+                "Led a team of 5 developers to rebuild the core product, improving performance by 40%.",
+                "Implemented CI/CD pipelines reducing deployment time from 1 hour to 10 minutes.",
+                "Mentored junior developers and established code review standards."
+            ]
+        },
+        {
+            "title": "Software Engineer",
+            "company": "StartUp Hero",
+            "period": "2016 - 2019",
+            "achievements": [
+                "Developed key features for the MVP used by initial 10k users.",
+                " integrated 3rd party APIs for payments and notifications."
+            ]
+        }
+    ]
+}

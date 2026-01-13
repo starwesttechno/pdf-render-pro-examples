@@ -1,0 +1,21 @@
+{
+    "book": {
+        "title": "The Future of AI",
+        "author": "Dr. Alan Grant",
+        "edition": "First"
+    },
+    "chapters": [
+        {
+            "title": "Chapter 1: The Beginning",
+            "content": "<p>Artificial Intelligence began not with a bang, but with a whisper of code. In the early days, simple algorithms paved the way for the complex neural networks we see today...</p><p>As we moved into the 21st century, compute power exploded, allowing us to train models on vast datasets previously unimaginable.</p>"
+        },
+        {
+            "title": "Chapter 2: Machine Learning",
+            "content": "<p>Machine Learning represents a paradigm shift. Instead of explicitly programming rules, we feed data to algorithms and let them discern the patterns.</p><p>Supervised, unsupervised, and reinforcement learning are the three pillars of this new era.</p>"
+        },
+        {
+            "title": "Chapter 3: Ethical Considerations",
+            "content": "<p>With great power comes great responsibility. The ethical implications of AI are vast. From bias in algorithms to the displacement of jobs, we must navigate these waters carefully.</p>"
+        }
+    ]
+}

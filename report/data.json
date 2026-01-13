@@ -1,0 +1,54 @@
+{
+    "companyName": "StarWest Techno",
+    "month": "October",
+    "year": "2023",
+    "salesData": [
+        {
+            "label": "Week 1",
+            "value": 120,
+            "percent": 40
+        },
+        {
+            "label": "Week 2",
+            "value": 150,
+            "percent": 50
+        },
+        {
+            "label": "Week 3",
+            "value": 240,
+            "percent": 80
+        },
+        {
+            "label": "Week 4",
+            "value": 300,
+            "percent": 100
+        }
+    ],
+    "metrics": [
+        {
+            "name": "New Leads",
+            "target": 500,
+            "actual": 523,
+            "status": "Exceeded",
+            "statusColor": "green"
+        },
+        {
+            "name": "Conversion Rate",
+            "target": "5%",
+            "actual": "4.2%",
+            "status": "Missed",
+            "statusColor": "red"
+        },
+        {
+            "name": "Customer Sat.",
+            "target": "90%",
+            "actual": "92%",
+            "status": "Met",
+            "statusColor": "green"
+        }
+    ],
+    "summary": {
+        "totalRevenue": "$45,200",
+        "netProfit": "$12,400"
+    }
+}

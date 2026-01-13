@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Courier New', Courier, monospace; background: #333; }
+        .ticket {
+            width: 800px;
+            margin: 20px auto;
+            background: white;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .left {
+            width: 70%;
+            padding: 30px;
+            position: relative;
+            background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+        }
+        .right {
+            width: 30%;
+            padding: 20px;
+            background: #eee;
+            border-left: 2px dashed #999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .event-name { font-size: 30px; font-weight: bold; margin-bottom: 10px; color: #d35400; }
+        .event-details { font-size: 16px; margin-bottom: 20px; line-height: 1.5; }
+        .ticket-info { display: flex; justify-content: space-between; margin-bottom: 30px; }
+        .label { font-size: 12px; color: #7f8c8d; text-transform: uppercase; }
+        .value { font-size: 18px; font-weight: bold; }
+        .barcode { text-align: center; }
+        .barcode img { width: 80%; height: 50px; }
+        .admit-one { font-size: 24px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; color: #555; transform: rotate(-90deg); position: absolute; right: -20px; top: 50%; }
+        .qr-code img { width: 120px; height: 120px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="left">
+            <div class="event-name">{{event.name}}</div>
+            <div class="event-details">{{event.location}}<br>{{event.date}} @ {{event.time}}</div>
+            
+            <div class="ticket-info">
+                <div>
+                    <div class="label">Section</div>
+                    <div class="value">{{ticket.section}}</div>
+                </div>
+                <div>
+                    <div class="label">Row</div>
+                    <div class="value">{{ticket.row}}</div>
+                </div>
+                <div>
+                    <div class="label">Seat</div>
+                    <div class="value">{{ticket.seat}}</div>
+                </div>
+                <div>
+                    <div class="label">Price</div>
+                    <div class="value">{{ticket.price}}</div>
+                </div>
+            </div>
+
+            <div class="barcode">
+                <!-- Barcode for Ticket ID -->
+                <img src="{{{barcode ticket.id 'CODE128' 400 60 true}}}" alt="Barcode">
+            </div>
+        </div>
+        <div class="right">
+            <div class="qr-code">
+                <!-- QR Code for Gate Check-in -->
+                <img src="{{{qrcode ticket.checkInUrl 'url' 5}}}" alt="Check-In QR">
+            </div>
+            <div style="font-size: 12px; color: #777;">Scan at Gate</div>
+            <div style="font-weight: bold; margin-top: 20px; font-size: 20px;">#{{ticket.id_short}}</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "sender": {
+        "name": "Warehouse 42",
+        "address": "100 Logistics Way",
+        "city": "Memphis",
+        "state": "TN",
+        "zip": "38116"
+    },
+    "recipient": {
+        "name": "Alice Johnson",
+        "address": "742 Evergreen Terrace",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62704"
+    },
+    "package": {
+        "weight": "2.5 LBS",
+        "shipDate": "01/15/2026",
+        "service": "P",
+        "trackingNumber": "1Z999AA10123456784",
+        "reference": "ORD-556677"
+    }
+}

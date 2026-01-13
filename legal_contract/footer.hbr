@@ -1,0 +1,4 @@
+<div style="font-family: 'Times New Roman', serif; font-size: 10pt; width: 100%; border-top: 1px solid #ccc; margin: 0 60px; padding-top: 5px; display: flex; justify-content: space-between;">
+    <div>{{contract.refNumber}}</div>
+    <div>Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>
+</div>

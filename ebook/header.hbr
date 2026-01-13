@@ -1,0 +1,3 @@
+<div style="width: 100%; text-align: right; font-size: 9px; color: #aaa; padding-right: 40px; margin-top: 10px;">
+    <i>{{book.title}}</i>
+</div>

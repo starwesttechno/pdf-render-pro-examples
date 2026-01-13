@@ -1,0 +1,35 @@
+{
+    "contract": {
+        "type": "Professional Services Agreement",
+        "date": "March 1, 2026",
+        "refNumber": "CTR-2026-005"
+    },
+    "parties": {
+        "client": {
+            "name": "Acme Corp",
+            "address": "123 Business Rd, Tech City",
+            "signer": "John Boss",
+            "title": "CEO"
+        },
+        "provider": {
+            "name": "StarWest Solutions",
+            "address": "456 Developer Ln, Code Valley",
+            "signer": "Jane Dev",
+            "title": "CTO"
+        }
+    },
+    "services": [
+        "Web Application Development",
+        "Cloud Infrastructure Setup",
+        "Security Audit and Compliance",
+        "Ongoing Maintenance and Support"
+    ],
+    "payment": {
+        "amount": "$50,000.00",
+        "schedule": "50% upfront, 25% upon beta release, 25% upon final delivery."
+    },
+    "terms": {
+        "noticePeriod": "30 days",
+        "state": "California"
+    }
+}

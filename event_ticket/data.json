@@ -1,0 +1,17 @@
+{
+    "event": {
+        "name": "Summer Music Festival 2026",
+        "location": "Central Park Arena, New York",
+        "date": "July 12, 2026",
+        "time": "5:30 PM"
+    },
+    "ticket": {
+        "id": "TICKET-99887766",
+        "id_short": "9988",
+        "section": "A",
+        "row": "12",
+        "seat": "45",
+        "price": "$125.00",
+        "checkInUrl": "https://festival.com/checkin/TICKET-99887766"
+    }
+}
