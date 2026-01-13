@@ -1,8 +1,9 @@
 {
     "format": "A4",
     "printBackground": true,
+    "footerTemplate": "<div/>",
     "margin": {
-        "top": "80px",
+        "top": "100px",
         "bottom": "50px",
         "left": "0px",
         "right": "0px"
