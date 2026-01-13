@@ -1,48 +1,142 @@
 {
     "profile": {
         "name": "Jane Doe",
-        "title": "Senior Software Engineer",
-        "email": "jane.doe@example.com",
+        "title": "Principal Software Architect",
+        "email": "jane.doe@tech-architects.io",
         "phone": "+1 (555) 987-6543",
         "location": "San Francisco, CA",
         "website": "https://janedoe.dev",
-        "summary": "Experienced software engineer with over 8 years of expertise in building scalable web applications. Passionate about clean code, performance optimization, and developer experience."
+        "summary": "Innovative and results-driven Software Architect with over 15 years of experience in designing high-performance, scalable distributed systems. Proven track record of leading cross-functional teams to deliver mission-critical solutions in FinTech, Healthcare, and E-commerce sectors. Expertise in cloud-native architectures, microservices optimization, and enterprise security."
     },
     "skills": [
-        "JavaScript",
+        "System Architecture",
+        "Microservices",
+        "Kubernetes",
+        "AWS",
+        "Google Cloud",
+        "Rust",
+        "Go",
         "TypeScript",
         "Node.js",
+        "Python",
         "React",
-        "Docker",
-        "AWS",
         "GraphQL",
-        "Python"
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Kafka",
+        "Elasticsearch",
+        "Docker",
+        "Terraform",
+        "CI/CD",
+        "Cybersecurity",
+        "Team Leadership",
+        "Agile Methodologies"
     ],
     "education": [
         {
-            "degree": "B.S. Computer Science",
-            "school": "University of Technology",
-            "year": "2015"
+            "degree": "M.S. Computer Science",
+            "school": "Stanford University",
+            "year": "2013"
+        },
+        {
+            "degree": "B.S. Electrical Engineering",
+            "school": "MIT",
+            "year": "2011"
         }
     ],
     "experience": [
         {
-            "title": "Lead Developer",
-            "company": "Tech Innovators Inc.",
-            "period": "2019 - Present",
+            "title": "Principal Software Architect",
+            "company": "Global FinTech Solutions",
+            "period": "2023 - Present",
             "achievements": [
-                "Led a team of 5 developers to rebuild the core product, improving performance by 40%.",
-                "Implemented CI/CD pipelines reducing deployment time from 1 hour to 10 minutes.",
-                "Mentored junior developers and established code review standards."
+                "Architected a next-generation real-time payment processing engine handling 10M+ transactions per second.",
+                "Led the migration of legacy monolithic systems to a cloud-native microservices architecture on AWS EKS.",
+                "Implemented Zero Trust security framework across the entire engineering organization, reducing vulnerability exposure by 95%.",
+                "Mentored a team of 20+ senior engineers and defined technical roadmaps for critical infrastructure projects.",
+                "Reduced infrastructure costs by 40% through intelligent auto-scaling policies and spot instance utilization."
+            ]
+        },
+        {
+            "title": "Senior Staff Engineer",
+            "company": "HealthTech Innovations",
+            "period": "2020 - 2023",
+            "achievements": [
+                "Designed and built a HIPAA-compliant telemedicine platform serving 5 million patients globally.",
+                "Optimized video streaming protocols (WebRTC) to ensure low-latency consultations even in low-bandwidth regions.",
+                "Developed a federated learning machine learning pipeline for privacy-preserving medical diagnosis models.",
+                "Established Engineering Excellence standards, introducing automated chaos engineering and performance testing gates.",
+                "Spearheaded the adoption of Rust for performance-critical services, resulting in a 10x throughput improvement."
+            ]
+        },
+        {
+            "title": "Lead Backend Engineer",
+            "company": "E-Commerce Giants Inc.",
+            "period": "2017 - 2020",
+            "achievements": [
+                "Scaled the inventory management system to support Black Friday traffic peaks of 500k requests/second.",
+                "Designed a highly available distributed caching strategy using Redis Cluster and Memcached.",
+                "Migrated the search backend from Solr to Elasticsearch, improving query relevance and reducing latency by 300ms.",
+                "Created a developer platform team that built internal tooling to streamline onboarding and deployment velocity.",
+                "Authored 5 patents related to distributed transaction consistency in eventual consistency models."
+            ]
+        },
+        {
+            "title": "Senior Software Engineer",
+            "company": "Social Connect App",
+            "period": "2015 - 2017",
+            "achievements": [
+                "Built the real-time notification service utilizing Apache Kafka and WebSockets for 50M active users.",
+                "Optimized graph database queries (Neo4j) for friend recommendation algorithms.",
+                "Led the 'Lite' app initiative, reducing Android app size by 70% and improving emerging market adoption.",
+                "Implemented GraphQL API gateway, allowing frontend teams to reduce over-fetching and improve mobile performance.",
+                "Conducting technical interviews and contributed to growing the engineering team from 15 to 50 members."
+            ]
+        },
+        {
+            "title": "Software Engineer II",
+            "company": "Cloud Data Systems",
+            "period": "2013 - 2015",
+            "achievements": [
+                "Developed RESTful APIs for a SaaS analytics platform used by Fortune 500 companies.",
+                "Automated database backups and disaster recovery procedures using Python and Bash scripts.",
+                "Integrated third-party payment gateways (Stripe, PayPal) and subscription management logic.",
+                "Implemented role-based access control (RBAC) and OAuth2 authentication flows.",
+                "Collaborated with product managers to define MVP requirements and delivery timelines."
             ]
         },
         {
             "title": "Software Engineer",
             "company": "StartUp Hero",
-            "period": "2016 - 2019",
+            "period": "2011 - 2013",
             "achievements": [
-                "Developed key features for the MVP used by initial 10k users.",
-                " integrated 3rd party APIs for payments and notifications."
+                "Full-stack development for an early-stage ed-tech startup using Ruby on Rails and jQuery.",
+                "Built the initial classroom video conferencing features using Flash Media Server.",
+                "Managed AWS EC2 instances and successfully handled the viral growth phase.",
+                "Created the first automated test suite (RSpec), reducing regression bugs by 60%.",
+                "Participated in Y Combinator demo day preparation and technical due diligence."
+            ]
+        },
+        {
+            "title": "Research Assistant",
+            "company": "MIT Media Lab",
+            "period": "2010 - 2011",
+            "achievements": [
+                "Collaborated on HCI research projects exploring tangible user interfaces.",
+                "Developed prototypes using Arduino and Processing to visualize sensor data.",
+                "Published a paper on 'Interactive Learning Environments' at CHI 2011.",
+                "Assisted in teaching 'Introduction to Programming' to undergraduate students."
+            ]
+        },
+        {
+            "title": "Engineering Intern",
+            "company": "SpaceX",
+            "period": "Summer 2010",
+            "achievements": [
+                "Contributed to the telemetry data visualization dashboard for Falcon 9 launches.",
+                "Wrote C++ drivers for custom avionics hardware sensors.",
+                "Participated in code reviews and learned high-reliability software practices."
             ]
         }
     ]

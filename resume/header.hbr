@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 40px;
+            color: #333;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        .name-role h1 {
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #2c3e50;
+        }
+
+        .name-role h2 {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="name-role">
+            <h1>{{profile.name}}</h1>
+            <h2>{{profile.title}}</h2>
+        </div>
+        <div class="contact-info">
+            <div>{{profile.email}}</div>
+            <div>{{profile.phone}}</div>
+            <div>{{profile.location}}</div>
+            <div>{{profile.website}}</div>
+        </div>
+    </div>
+</body>
+
+</html>

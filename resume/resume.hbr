@@ -1,40 +1,122 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 40px; color: #333; }
-        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #2c3e50; padding-bottom: 20px; margin-bottom: 30px; }
-        .name-role h1 { margin: 0; font-size: 36px; text-transform: uppercase; color: #2c3e50; }
-        .name-role h2 { margin: 5px 0 0; font-size: 18px; color: #7f8c8d; font-weight: normal; }
-        .contact-info { text-align: right; font-size: 14px; line-height: 1.6; }
-        .main { display: flex; gap: 40px; }
-        .sidebar { width: 30%; }
-        .content { width: 70%; }
-        .section { margin-bottom: 30px; }
-        .section-title { font-size: 16px; font-weight: bold; color: #2c3e50; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; }
-        .skill-tag { display: inline-block; background: #ecf0f1; padding: 4px 8px; border-radius: 4px; font-size: 12px; margin: 0 5px 5px 0; }
-        .job { margin-bottom: 20px; }
-        .job-title { font-weight: bold; font-size: 16px; }
-        .job-company { font-style: italic; color: #7f8c8d; font-size: 14px; margin-bottom: 5px; }
-        .job-details { font-size: 14px; color: #555; }
-        .qr-code { text-align: center; margin-top: 20px; }
-        .qr-code img { width: 100px; height: 100px; }
-        .qr-label { font-size: 12px; color: #7f8c8d; margin-top: 5px; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .name-role h1 {
+            margin: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: #2c3e50;
+        }
+
+        .name-role h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .main {
+            display: flex;
+            gap: 40px;
+        }
+
+        .sidebar {
+            width: 30%;
+        }
+
+        .content {
+            width: 70%;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin: 0 5px 5px 0;
+        }
+
+        .job {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .job-company {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .job-details {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .qr-code img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .qr-label {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="header">
-        <div class="name-role">
-            <h1>{{profile.name}}</h1>
-            <h2>{{profile.title}}</h2>
-        </div>
-        <div class="contact-info">
-            <div>{{profile.email}}</div>
-            <div>{{profile.phone}}</div>
-            <div>{{profile.location}}</div>
-            <div>{{profile.website}}</div>
-        </div>
-    </div>
+    <!-- Header moved to header.hbr -->
 
     <div class="main">
         <div class="sidebar">
@@ -46,7 +128,7 @@
                     {{/each}}
                 </div>
             </div>
-            
+
             <div class="section">
                 <div class="section-title">Education</div>
                 {{#each education}}
@@ -75,7 +157,9 @@
                 <div class="section-title">Experience</div>
                 {{#each experience}}
                 <div class="job">
-                    <div class="job-title">{{title}} <span style="float: right; font-size: 12px; font-weight: normal; color: #7f8c8d;">{{period}}</span></div>
+                    <div class="job-title">{{title}} <span
+                            style="float: right; font-size: 12px; font-weight: normal; color: #7f8c8d;">{{period}}</span>
+                    </div>
                     <div class="job-company">{{company}}</div>
                     <ul class="job-details">
                         {{#each achievements}}
@@ -88,4 +172,5 @@
         </div>
     </div>
 </body>
+
 </html>
