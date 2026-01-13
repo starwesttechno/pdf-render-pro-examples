@@ -1,0 +1,10 @@
+{
+    "format": "A5",
+    "printBackground": true,
+    "margin": {
+        "top": "60px",
+        "bottom": "60px",
+        "left": "20px",
+        "right": "20px"
+    }
+}

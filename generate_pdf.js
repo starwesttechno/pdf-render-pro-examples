@@ -40,6 +40,18 @@ try {
 let headerTemplate = fs.existsSync(headerPath) ? fs.readFileSync(headerPath, 'utf8') : null;
 let footerTemplate = fs.existsSync(footerPath) ? fs.readFileSync(footerPath, 'utf8') : null;
 
+// Load PDF options from pdfoptions.json if it exists
+const pdfOptionsPath = path.join(folderPath, 'pdfoptions.json');
+let pdfOptions = {};
+if (fs.existsSync(pdfOptionsPath)) {
+    try {
+        pdfOptions = JSON.parse(fs.readFileSync(pdfOptionsPath, 'utf8'));
+        console.log(`Loaded PDF options from ${pdfOptionsPath}`);
+    } catch (e) {
+        console.warn(`Warning: Failed to parse pdfoptions.json: ${e.message}`);
+    }
+}
+
 // 3. Construct API Payload
 // Reading API Key from env var or args (optional second arg)
 const apiKey = process.env.RAPIDAPI_KEY || args[1];
@@ -49,21 +61,24 @@ if (!apiKey) {
     console.warn('The request might fail if the API requires authentication.');
 }
 
+// Merge PDF options with defaults
+const defaultOptions = {
+    displayHeaderFooter: !!(headerTemplate || footerTemplate),
+    headerTemplate: headerTemplate,
+    footerTemplate: footerTemplate,
+    printBackground: true,
+    format: 'A4',
+    margin: {
+        top: '150px',
+        bottom: '150px'
+    }
+};
+
 const payload = {
     sourceType: 'Template',
     content: content,
     data: data,
-    options: {
-        displayHeaderFooter: !!(headerTemplate || footerTemplate),
-        headerTemplate: headerTemplate,
-        footerTemplate: footerTemplate,
-        printBackground: true,
-        format: 'A4',
-        margin: {
-            top: '150px',
-            bottom: '150px'
-        }
-    }
+    options: { ...defaultOptions, ...pdfOptions }
 };
 
 const payloadString = JSON.stringify(payload);

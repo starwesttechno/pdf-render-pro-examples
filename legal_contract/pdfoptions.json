@@ -1,0 +1,10 @@
+{
+    "format": "Letter",
+    "printBackground": true,
+    "margin": {
+        "top": "80px",
+        "bottom": "80px",
+        "left": "20px",
+        "right": "20px"
+    }
+}

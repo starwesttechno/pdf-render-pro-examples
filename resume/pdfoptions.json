@@ -1,0 +1,10 @@
+{
+    "format": "A4",
+    "printBackground": true,
+    "margin": {
+        "top": "80px",
+        "bottom": "50px",
+        "left": "0px",
+        "right": "0px"
+    }
+}
