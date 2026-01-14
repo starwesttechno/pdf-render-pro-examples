@@ -67,7 +67,6 @@ const defaultOptions = {
     headerTemplate: headerTemplate,
     footerTemplate: footerTemplate,
     printBackground: true,
-    format: 'A4',
     margin: {
         top: '150px',
         bottom: '150px'

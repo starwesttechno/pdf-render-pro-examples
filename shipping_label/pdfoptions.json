@@ -1,6 +1,5 @@
 {
-    "width": "4in",
-    "height": "6in",
+    "format": "A6",
     "printBackground": true,
     "margin": {
         "top": "0px",

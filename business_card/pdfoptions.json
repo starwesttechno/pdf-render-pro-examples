@@ -1,11 +1,11 @@
 {
-    "width": "3.5in",
-    "height": "2in",
+    "height": "2.4in",
+    "width": "3.8in",
     "printBackground": true,
     "margin": {
-        "top": "0px",
-        "bottom": "0px",
-        "left": "0px",
-        "right": "0px"
+        "top": "20px",
+        "bottom": "20px",
+        "left": "20px",
+        "right": "20px"
     }
 }
